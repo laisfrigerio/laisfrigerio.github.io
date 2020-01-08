@@ -1,0 +1,41 @@
+@import "variables/colors";
+@import "variables/rules";
+@import "variables/reset";
+@import "components/c-header";
+@import "components/c-aside";
+@import "components/c-btn";
+@import "components/c-section";
+@import "components/c-timeline";
+@import "components/c-title";
+@import "components/c-table";
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $wrapper;
+}
+
+.flex {
+  @extend %flexbox;
+
+  &.justify-end {
+    justify-content: flex-end;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and(max-width: $tablet01) {
+  .wrapper {
+    margin: 0 10px;
+  }
+
+  .flex {
+    &.tablet {
+      &.column {
+        flex-direction: column;
+      }
+    }
+  }
+}

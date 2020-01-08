@@ -1,0 +1,27 @@
+.btn {
+  color: $white;
+  cursor: pointer;
+  margin-right: 5px;
+
+  &.facebook {
+    background-color: $facebook;
+  }
+
+  &.github {
+    background-color: $github;
+  }
+
+  &.linkedin {
+    background-color: $linkedin;
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  &.social-network {
+    height: 40px;
+    @extend %shadow;
+    width: 40px;
+  }
+}

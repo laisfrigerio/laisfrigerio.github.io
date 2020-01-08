@@ -1,0 +1,32 @@
+table {
+    &.content {
+      th {
+        @extend .title-02;
+        text-align: left;
+      }
+      td {
+        height: 20px;
+        &.skill {
+          div {
+            @extend %flexbox;
+            margin: 0 0 0 20px;
+  
+            > span {
+              background-color: $tertinary;
+              border-radius: 50%;
+              height: 10px;
+              width: 10px;
+  
+              &.fill {
+                background-color: $secondary;
+              }
+    
+              &:not(:last-child) {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

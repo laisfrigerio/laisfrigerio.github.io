@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/**
+ * Reset
+ */
+
+body, main, nav, header, article, section, ul, li, a, input, aside, figure, button, table, thead, tbody, td, th, tr, div, span, h1, h2, h3, h4,  h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $primary;
+}

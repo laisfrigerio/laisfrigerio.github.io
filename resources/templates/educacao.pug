@@ -1,0 +1,49 @@
+extends ./frameset.pug
+
+block content
+    - var active = 2;
+    include ./components/c-header.pug
+    div(class="flex tablet column")
+        include ./components/c-aside.pug
+        section(id="content")
+            article(class="experience-data")
+                h3(class="title-03") Educação
+                    div(class="divisor")
+
+                //- Timeline
+                div(class="c-timeline")
+                    
+                    div(class="timeline-item")
+                        div(class="item")
+                            div
+                                small
+                                    | Março/2019 - Outubro/2020
+                                h4(class="title-04") Especialização em Engenharia de Software, UFPR
+                            
+                            ul(class="ul-list")
+                                li Desenvolvimento de software com o foco na linguagem de programação JAVA tanto para web quanto para dispositivos móveis utilizando como metodologia métodos ágeis;
+                                li Curso aberto para a aprendizagem de novas tecnologias, como o framework javascript Angular 8 e Flutter para dispositivos móveis.
+
+                    div(class="timeline-item")
+                        div(class="item")
+                            div
+                                small
+                                    | Concluído em Dezembro/2017
+                                h4(class="title-04") Superior em Análise e Desenvolvimento de Sistema, UFPR
+                            ul(class="ul-list")
+                                li Análise, definição e documentação de requisitos;
+                                li Avaliando e definindo banco de dados; 
+                                li Desenvolver e manter sistemas financeiros e administrativos; 
+                                li Desenvolvimento mobile e web.
+
+                    div(class="timeline-item")
+                        div(class="item")
+                            div
+                                small
+                                    | Concluído em Dezembro/2014
+                                h4(class="title-04") Ensino Técnico em Informática, Opet
+                            ul(class="ul-list") 
+                                li Introdução banco de dados utilizando o gerenciador de banco de dados MySQL; 
+                                li Introdução ao sistema web (HTML/CSS); 
+                                li Introdução à programação funcional em C++ e programação orientada a objetos; 
+                                li Desenvolvimento de aplicações desktop em Java.

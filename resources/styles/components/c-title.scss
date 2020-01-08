@@ -1,0 +1,29 @@
+.title-01 {
+    color: $white;
+    font-size: 20px;
+  }
+  
+  .title-02 {
+    color: $tertinary;
+    font-size: 12px;
+  }
+  
+  .title-03 {
+    color: $white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 150%;
+    margin-bottom: 10px;
+    padding: 5px 0;
+  
+    .divisor {
+      border-bottom: 4px solid $secondary;
+      width: 35px;
+      margin-top: 10px;
+    }
+  }
+  
+  .title-04 {
+    color: $secondary;
+  }

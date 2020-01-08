@@ -1,0 +1,36 @@
+$z-index-lowest: -100;
+$z-index-lower: -10;
+$z-index-low: -1;
+$z-index: 0;
+$z-index-high: 1;
+$z-index-higher: 10;
+$z-index-highest: 100;
+
+$wrapper: 768px;
+$desktop: 1176px;
+$tablet01: $wrapper + 50px;
+$mobile01: 409px;
+
+%flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+$margin-bottom-default: 20px;
+
+%shadow {
+  -moz-box-shadow:    0 0 20px 0 #191818;
+  -webkit-box-shadow: 0 0 20px 0 #191818;
+  box-shadow:         0 0 20px 0 #191818;
+}

@@ -1,0 +1,11 @@
+extends ./frameset.pug
+
+block content
+    - var active = 3;
+    include ./components/c-header.pug
+    div(class="flex tablet column")
+        include ./components/c-aside.pug
+        section(id="content")
+            article(class="experience-data")
+                h3(class="title-03") Projetos
+                    div(class="divisor")
