@@ -26,6 +26,20 @@
   display: none;
 }
 
+.link {
+  color: $secondary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.img-fluid {
+  height: auto;
+  width: 100%;
+}
+
 @media screen and(max-width: $tablet01) {
   .wrapper {
     margin: 0 10px;
