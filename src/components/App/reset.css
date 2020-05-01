@@ -61,3 +61,14 @@ button, input {
     border: none;
 }
 
+main {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+@media screen and (max-width: 818px) {
+    .wrapper {
+        margin: 0 10px;
+    }
+}
+
