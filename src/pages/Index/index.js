@@ -1,31 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 
+import Article from "../../components/Content/Article";
 import Section from "../../components/Content/Section";
 import Timeline from "../../components/Content/Timeline";
 import TimelineItem from "../../components/Content/TimelineItem";
-
-const Article = styled.article`
-    .title {
-        color: #fff;
-        font-family: 'Press Start 2P',cursive;
-        font-size: 11px;
-        letter-spacing: 2px;
-        line-height: 150%;
-        margin-bottom: 10px;
-        padding: 5px 0;
-
-        .divisor {
-            border-bottom: 4px solid #9c27b0;
-            margin-top: 10px;
-            width: 35px;
-        }
-
-        @media screen and (max-width: 616px) {
-            padding-left: 10px;
-        }
-    }
-`;
 
 const IndexPage = () => {
     return (
@@ -39,7 +17,7 @@ const IndexPage = () => {
             <Timeline>
                 <TimelineItem 
                     title="Analista de Sistemas Júnior"
-                    period="Dezembro/2018 - Atualmente"
+                    subtitle="Dezembro/2018 - Atualmente"
                     place=", Editora Gazeta do Povo"
                 >
                     <ul className="ul-list">
@@ -56,7 +34,7 @@ const IndexPage = () => {
                 </TimelineItem>
                 <TimelineItem
                     title="Desenvolvedora Júnior / PHP Backend"
-                    period="Janeiro/2018 - Novembro/2018"
+                    subtitle="Janeiro/2018 - Novembro/2018"
                     place=", Agência Polvo"
                 >
                     <ul className="ul-list">
@@ -70,7 +48,7 @@ const IndexPage = () => {
                 </TimelineItem>
                 <TimelineItem
                     title="Estágiária / PHP Backend"
-                    period="Outubro/2017 - Dezembro/2017"
+                    subtitle="Outubro/2017 - Dezembro/2017"
                     place=", Agência Polvo"
                 >
                     <ul className="ul-list">
@@ -81,7 +59,7 @@ const IndexPage = () => {
                 </TimelineItem>
                 <TimelineItem
                     title="Pesquisadora"
-                    period="Outubro/2017 - Dezembro/2017"
+                    subtitle="Outubro/2017 - Dezembro/2017"
                     place=", C3SL - Centro de Computação Científica e Software Livre"
                 >
                     <ul className="ul-list">

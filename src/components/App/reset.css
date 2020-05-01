@@ -73,3 +73,14 @@ main {
     }
 }
 
+.link {
+    color: #9c27b0;
+    text-decoration: none;
+}
+
+.link:hover { text-decoration: underline; }
+
+.img-fluid {
+    height: auto;
+    width: 100%;
+}
