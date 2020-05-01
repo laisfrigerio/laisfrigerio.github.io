@@ -1,8 +1,12 @@
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: {
+        vendor: ["styled-components"],
+        bundle: "./src/index.js"
+    },
     output: {
         path: path.join(__dirname, "bundle"),
         filename: "bundle.js",
@@ -44,6 +48,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html'
+        }),
+        new webpack.optimize.SplitChunksPlugin({
+            name: "vendor",
+            minChunks: Infinity,
         })
     ] 
 }
