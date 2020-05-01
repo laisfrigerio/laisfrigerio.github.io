@@ -6,6 +6,7 @@ const P = styled.p`
     font-size: 12px;
     line-height: 150%;
     margin: 0 0 20px;
+    padding: 0 10px;
     text-align: center;
 `;
 

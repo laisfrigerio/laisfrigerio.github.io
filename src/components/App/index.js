@@ -1,15 +1,23 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import styled from 'styled-components';
 
 import './reset.css';
 
 import Aside from '../Aside';
 import Header from "../Header";
-import Flex from '../Flex';
 
 import IndexPage from "../../pages/Index";
 import EducationPage from "../../pages/Education";
 import ProjectPage from "../../pages/Project";
+
+const Flex = styled.div`
+    display: flex;
+
+    @media screen and (max-width: 616px) {
+        flex-direction: column;
+    }
+`;
 
 
 class App extends React.Component  {
