@@ -5,7 +5,7 @@ const Div = styled.div`
     margin-bottom: 20px;
 `;
 
-const H4 = styled.h4`
+const H3 = styled.h3`
     color: #fff;
     font-family: 'Press Start 2P',cursive;
     font-size: 11px;
@@ -58,10 +58,10 @@ const Progress = (props) => {
 
     return (
         <Div className="progress">
-            <H4>
+            <H3>
                 {props.name}
                 <div className="divisor"></div>
-            </H4>
+            </H3>
             <Table>
                 <tbody>
                     {props.items.map((item, indexTr) => {

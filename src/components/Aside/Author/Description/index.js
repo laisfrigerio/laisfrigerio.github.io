@@ -30,10 +30,13 @@ const H2 = styled.h2`
     font-size: 12px;
 `;
 
-const H3 = styled.h3`
+const Email = styled.div`
     color: #9c27b0;
     margin-top: 5px;
-    * { font-size: 10px; }
+    * { 
+        font-size: 10px; 
+        font-weight: bold;
+    }
     svg {
         height: 15px;
         margin-right: 5px;
@@ -50,12 +53,12 @@ const AuthorDescription = () => {
                 Lais Frigério
             </H1>
             <H2 className="title-02 logo">Software Developer</H2>
-            <H3 className="title-04">
+            <Email className="title-04">
                 <Flex className="align-items center">
                     <MailSVG />
                     laaisfrigerio@gmail.com
                 </Flex>
-            </H3>
+            </Email>
         </Flex>
     );
 };
