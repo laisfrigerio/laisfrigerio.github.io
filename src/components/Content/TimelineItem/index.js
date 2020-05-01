@@ -59,7 +59,7 @@ const TimelineItem = (props) => {
             <div className="item">
                 <div>
                     <small>
-                        {props.period}<strong>{props.place}</strong>
+                        {props.subtitle}<strong>{props.place}</strong>
                     </small>
                     <h4>{props.title}</h4>
                 </div>
