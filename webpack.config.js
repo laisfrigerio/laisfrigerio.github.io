@@ -3,14 +3,14 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+    devtool: 'source-map',
     entry: {
         vendor: ["styled-components"],
-        bundle: "./src/index.js"
+        index: "./src/index.js"
     },
     output: {
-        path: path.join(__dirname, "bundle"),
-        filename: "bundle.js",
-        publicPath: '/'
+        path: path.join(__dirname, "dist"),
+        filename: '[name].js'
     },
     devServer: {
         inline: true,
