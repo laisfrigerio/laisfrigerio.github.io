@@ -99,6 +99,7 @@ aside {
       @extend .title-02;
       line-height: 150%;
       margin: 0 0 $margin-bottom-default 0;
+      padding-left: 10px;
       text-align: center;
     }
   }
@@ -107,6 +108,7 @@ aside {
     margin-bottom: $margin-bottom-default;
 
     > div {
+      padding-left: 10px;
       &:first-child {
         margin-bottom: $margin-bottom-default;
       }
@@ -114,7 +116,7 @@ aside {
   }
 }
 
-@media screen and(max-width: $tablet01 + 50px) {
+@media screen and(max-width: 616px) {
   aside {
     .skill-data {
       @include flexbox();
@@ -143,7 +145,7 @@ aside {
   }
 }
 
-@media screen and(max-width: $tablet01) {
+@media screen and(max-width:  616px) {
   aside {
     width: 100%;
   }
