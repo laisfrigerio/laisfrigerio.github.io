@@ -26,7 +26,8 @@ aside {
         width: 95px;
     
         &.picture {
-          border: 3px solid $secondary;
+          background-color: $white;
+          border: 3px solid $white;
           @extend %shadow;
           height: 100px;
           margin-bottom: $margin-bottom-default;
