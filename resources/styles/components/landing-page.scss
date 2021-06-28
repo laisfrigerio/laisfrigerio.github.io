@@ -1,0 +1,137 @@
+@import "./terminal";
+
+body {
+	background-color: #10111a;
+	height: 100vh;
+}
+
+// body {
+	// background-color: transparent;
+	// justify-content: unset;
+	// align-items: unset;
+// }
+
+.landing-page {
+	width: 100%;
+	position: relative;
+
+	.header {
+		background-color: rgba(0,0,0, 0.2);
+		header {
+			@extend %flexbox;
+			justify-content: space-around;
+
+			.logo {
+				svg {
+					height: 60px;
+					width: 40px;
+				}
+			}
+
+			ul {
+				@extend %flexbox;
+				flex-direction: row;
+				justify-content: flex-end;
+				height: inherit;
+		
+				li {
+					align-items: center;
+					display: inline-flex;
+					list-style: none;
+					padding: 0 5px;
+		
+					a {
+						color: $tertinary;
+						font-weight: 600;
+						letter-spacing: 1px;
+						padding: 8px 10px;
+						text-decoration: none;
+					}
+		
+					&.active {
+						a {
+							color: $secondary;
+						}
+					}
+		
+					&:hover {
+						a {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// margin-top: 150px;
+		// height: 100%;
+		.line {
+			display: flex;
+    	justify-content: center;
+			align-items: center;
+			
+			.terminal-rose {
+				font-size: 200px;
+				color: $secondary;
+				// color: #ca64bf;
+			}
+
+			.dev {
+				font-size: 210px;
+				color: #e0e3ed;
+			}
+
+			.loper {
+				font-size: 210px;
+				color: $secondary;
+				// color: #ca64bf;
+			}
+
+			.deva {
+				transform: rotate(180deg);
+				font-size: 210px;
+				color: $secondary;
+				margin-top: 85px;
+			}
+
+			.equals {
+				margin-right: 15px;
+				font-size: 210px;
+				color: #48ba9d;
+				letter-spacing: -30px;
+				margin-top: 30px;
+			}
+
+			.arrow-right {
+				font-size: 150px;
+				color: #f37a53;
+				letter-spacing: -30px;
+				margin-right: 28px;
+				// display: none;
+			}
+
+			.open-key {
+				font-size: 150px;
+				color: #ca64bf;
+				// display: none;
+			}
+
+			.close-key {
+				font-size: 150px;
+				color: #ca64bf;
+				// display: none;
+			}
+		}
+		.line-2 {
+			justify-content: flex-end;
+			margin-right: 260px;
+			margin-top: -127px;
+		}
+	}
+}

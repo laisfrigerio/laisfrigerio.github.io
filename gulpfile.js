@@ -16,6 +16,8 @@ function views() {
     'resources/templates/index.pug',
     'resources/templates/educacao.pug',
     'resources/templates/projetos.pug',
+    'resources/templates/landing-page.pug',
+    'resources/templates/logo.pug',
   ])
   .pipe(pug())
   .pipe(gulp.dest("./"));
