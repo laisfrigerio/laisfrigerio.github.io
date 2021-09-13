@@ -1,8 +1,8 @@
 header(class="c-header")
-    ul
-        li(class="" + (active === 1 ? "active" : ""))
-            a(href="index.html") Início
-        li(class="" + (active === 2 ? "active" : "")) 
-            a(href="educacao.html") Educação
-        li(class="" + (active === 3 ? "active" : "")) 
-            a(href="projetos.html") Projetos
+  div 
+    img(alt="Óculos" src="/images/svg/glasses.svg")
+    nav
+      - var blogUrl = stage !== 'prd' ? 'blog.html' : 'blog'
+
+      a(href='/' class="" + (active === 'home' ? "active" : "")) Início
+      a(href=blogUrl class="" + (active === 'blog' ? "active" : "")) Blog

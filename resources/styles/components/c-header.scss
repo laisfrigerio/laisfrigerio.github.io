@@ -1,40 +1,88 @@
 .c-header {
-  background-color: transparent;
-  height: 60px;
-  margin-bottom: $margin-bottom-default;
+  background: $gray-900;
+  border: 1px solid $gray-400;
+  height: 5rem;
+  left: 0;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: $z-index-higher;
 
-  ul {
-    @extend %flexbox;
-    flex-direction: row;
-    justify-content: flex-end;
+  > div {
+    @extend %align-items-center;
+    @extend %flex;
+    @extend %justify-content-space-between;
     height: inherit;
     margin: 0 auto;
-    max-width: 1179px;
+    max-width: 1120px;
+    padding: 0 2rem;
+  
+    img {
+      height: 40px;
+      width: 40px;
+    }
 
-    li {
-      align-items: center;
-      display: inline-flex;
-      list-style: none;
-      padding: 0 5px;
-
+    nav {
+      height: inherit;
+      margin-left: 5rem;
+  
       a {
-        color: $tertinary;
-        font-weight: 600;
-        letter-spacing: 1px;
-        padding: 8px 10px;
+        color: $gray-300;
+        display: inline-block;
+        height: inherit;
+        line-height: 5rem;
+        padding: 0 0.5rem;
+        position: relative;
         text-decoration: none;
-      }
+        transition: color 0.2s;
+  
+        & + a {
+          margin-left: 2rem;
+        }
+  
+        &:hover {
+          color: $white;
+        }
 
-      &.active {
-        a {
-          color: $secondary;
+        &.active {
+          color: $green-500;
+          font-weight: bold;
+          &:after {
+            background-color: $green-500;
+            border-radius: 3px 3px 0 0;
+            bottom: 1px;
+            content: '';
+            height: 3px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+          }
         }
       }
+    }
 
-      &:hover {
-        a {
-          color: $white;
+@media (max-width: 487px) {
+      > img {
+        width: 50px;
+      }
+  
+      nav {
+        margin-left: 2.5rem;
+      }
+  
+      button {
+        bottom: 10px;
+        position: fixed;
+        right: 10px;
+  
+        span {
+          display: none;
+        }
+  
+        svg {
+          &:first-child {
+            margin-right: 0;
+          }
         }
       }
     }

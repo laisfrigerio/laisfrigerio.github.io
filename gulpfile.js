@@ -4,6 +4,7 @@ const sass = require("gulp-sass")(require('sass'));
 const minify = require('gulp-csso');
 const concat = require('gulp-concat');
 const pug = require('gulp-pug');
+const data = require('gulp-data')
 
 function css() {
   return gulp.src('./resources/styles/app.scss')
@@ -23,9 +24,9 @@ function js() {
 function views() {
   return gulp.src([
     'resources/templates/index.pug',
-    'resources/templates/educacao.pug',
-    'resources/templates/projetos.pug',
+    'resources/templates/blog.pug'
   ])
+  .pipe(data({ stage: process.argv[2] })) 
   .pipe(pug())
   .pipe(gulp.dest('./'));
 }
@@ -38,6 +39,6 @@ function watch() {
 
 exports.css = css;
 exports.js = js;
-exports.views = views;
-exports.watch = watch
-exports.default = gulp.parallel(css, js, views);
+exports.watch = watch;
+exports.prd = gulp.parallel(css, js, views);
+exports.dev = gulp.parallel(css, js, views);
