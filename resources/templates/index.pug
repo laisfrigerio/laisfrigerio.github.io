@@ -1,15 +1,24 @@
 extends ./frameset.pug
 
 block content
-  - var active = 'home';
+  - const active = 'home';
+  - const arrowRight = "=>"
   include ./components/c-header.pug
 
   section(class="c-hero wrapper" id="hero")
     div(class="profile-data")
-      p(class="profile-description")
-        - const arrow = "=>"
+      div(class="profile-about")
+        h1(class="title-01") Lais Frigério
+        h2(class="tag") Software Developer
 
-        span #{arrow}
+      p(class="profile-description")
+        span #{arrowRight}
         | Olá, meu nome é Lais, sou formada em Análise e Desenvolvimento de Sistemas e pós-graduada em Engenharia de Software pela <b>UFPR</b>. Sou apaixonado por futebol, tendo o <b class="team-name">CORITIBA</b> como o time do 
         span(class="team-heart") ♥
+
+      include ./components/c-social-media.pug
+
     include ./icons/hero-illustration.svg
+
+  section(class="c-techs wrapper")
+    h1(class="title-01") Tecnologias

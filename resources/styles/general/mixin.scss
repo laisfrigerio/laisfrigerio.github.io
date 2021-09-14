@@ -15,3 +15,9 @@
              -ms-flex-order: $int;
                       order: $int;
 }
+
+@mixin flex-wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}

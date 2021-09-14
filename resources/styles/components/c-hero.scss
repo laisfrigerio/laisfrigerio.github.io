@@ -2,11 +2,21 @@
   @extend %align-items-center;
   @extend %flex;
   @extend %justify-content-space-between;
-  padding: 4rem;
+  padding: 4rem 0;
   margin-top: 80px;
 
   .profile-data {
     min-width: 500px;
+    padding-left: 2rem;
+  }
+
+  .profile-about {
+    @extend %align-items-center;
+    @extend %flex;
+  }
+
+  .title-01 {
+    margin-right: 10px;
   }
 
   p {
@@ -14,7 +24,6 @@
     font-size: 1rem;
     line-height: 150%;
     margin-top: 10px;
-    padding: 0 2rem;
     text-align: left;
 
     span {
@@ -26,7 +35,7 @@
     }
 
     + div {
-      padding: 2rem 2rem;
+      padding: 0.5rem 0;
     }
   }
 
@@ -43,7 +52,7 @@
     margin-left: 0;
   }
 
-  svg {
+  .hero-illustration {
     height: 100%;
     max-width: 450px;
     width: 100%;
@@ -57,9 +66,14 @@
       @include flex-order(2);
       max-width: 620px;
       min-width: auto;
+
+      .profile-about {
+        @include flex-wrap;
+        padding: 2rem 0 0;
+      }
     }
 
-    svg {
+    .hero-illustration {
       @include flex-order(1);
     }
   }
