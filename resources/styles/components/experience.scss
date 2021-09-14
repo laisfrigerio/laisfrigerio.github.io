@@ -1,0 +1,8 @@
+.experience {
+  padding: 0 0 4rem;
+
+  @media #{$media-max992} {
+    max-width: 620px;
+    padding: 4rem 0;
+  }
+}
