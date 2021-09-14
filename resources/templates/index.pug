@@ -3,9 +3,9 @@ extends ./frameset.pug
 block content
   - const active = 'home';
   - const arrowRight = "=>"
-  include ./components/c-header.pug
+  include ./components/header.pug
 
-  section(class="c-hero wrapper" id="hero")
+  section(class="hero wrapper" id="hero")
     div(class="profile-data")
       div(class="profile-about")
         h1(class="title-01") Lais Frigério
@@ -16,7 +16,7 @@ block content
         | Olá, meu nome é Lais, sou formada em Análise e Desenvolvimento de Sistemas e pós-graduada em Engenharia de Software pela <b>UFPR</b>. Sou apaixonado por futebol, tendo o <b class="team-name">CORITIBA</b> como o time do 
         span(class="team-heart") ♥
 
-      include ./components/c-social-media.pug
+      include ./components/social-media.pug
 
     include ./icons/hero-illustration.svg
 

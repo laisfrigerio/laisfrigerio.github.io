@@ -6,10 +6,11 @@
 @import "general/mixin";
 @import "general/reset";
 @import "general/basics";
-@import "components/c-header";
-@import "components/c-hero";
-@import "components/c-social-media";
-@import "components/c-btn";
+@import "ui/ui-header";
+@import "ui/ui-btn";
+@import "ui/ui-title";
+@import "ui/ui-table";
+@import "ui/ui-tag";
+@import "components/hero";
+@import "components/social-media";
 @import "components/c-timeline";
-@import "components/c-title";
-@import "components/c-table";
