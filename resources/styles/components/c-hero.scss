@@ -1,0 +1,66 @@
+.c-hero {
+  @extend %align-items-center;
+  @extend %flex;
+  @extend %justify-content-space-between;
+  padding: 4rem;
+  margin-top: 80px;
+
+  .profile-data {
+    min-width: 500px;
+  }
+
+  p {
+    color: $gray-350;
+    font-size: 1rem;
+    line-height: 150%;
+    margin-top: 10px;
+    padding: 0 2rem;
+    text-align: left;
+
+    span {
+      color: $green-500;
+      display: inline-block;
+      font-family: $font-fira-code;
+      font-weight: bold ;
+      margin-right: 3px;
+    }
+
+    + div {
+      padding: 2rem 2rem;
+    }
+  }
+
+  .team-name,
+  .team-heart {
+    color: $green-500;
+    display: inline-block;
+    font-family: $font-fira-code;
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+
+  .team-name {
+    margin-left: 0;
+  }
+
+  svg {
+    height: 100%;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  @media #{$media-max992} {
+    @include flex-direction-column;
+    padding: 1rem;
+
+    .profile-data {
+      @include flex-order(2);
+      max-width: 620px;
+      min-width: auto;
+    }
+
+    svg {
+      @include flex-order(1);
+    }
+  }
+}

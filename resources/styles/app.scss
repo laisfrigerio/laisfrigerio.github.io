@@ -1,57 +1,16 @@
-@import "variables/colors";
-@import "variables/rules";
-@import "variables/extends";
-@import "variables/mixin";
-@import "variables/reset";
+@import "general/variables";
+@import "general/colors";
+@import "general/fonts";
+@import "general/rules";
+@import "general/extends";
+@import "general/mixin";
+@import "general/reset";
+@import "general/basics";
 @import "components/c-header";
+@import "components/c-hero";
 @import "components/c-aside";
 @import "components/c-btn";
 @import "components/c-section";
 @import "components/c-timeline";
 @import "components/c-title";
 @import "components/c-table";
-
-.wrapper {
-  margin: 0 auto;
-  max-width: $wrapper;
-}
-
-.flex {
-  @extend %flexbox;
-
-  &.justify-end {
-    justify-content: flex-end;
-  }
-}
-
-.hide {
-  display: none;
-}
-
-.link {
-  color: $secondary;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.img-fluid {
-  height: auto;
-  width: 100%;
-}
-
-@media screen and(max-width: 616px) {
-  .wrapper {
-    margin: 0 10px;
-  }
-
-  .flex {
-    &.tablet {
-      &.column {
-        flex-direction: column;
-      }
-    }
-  }
-}

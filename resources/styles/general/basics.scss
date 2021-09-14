@@ -1,0 +1,22 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: $wrapper;
+}
+
+.hide {
+  display: none;
+}
+
+.link {
+  color: $secondary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.img-fluid {
+  height: auto;
+  width: 100%;
+}

@@ -3,5 +3,13 @@ extends ./frameset.pug
 block content
   - var active = 'home';
   include ./components/c-header.pug
-  P TESTE
-  h1 #{stage}
+
+  section(class="c-hero wrapper" id="hero")
+    div(class="profile-data")
+      p(class="profile-description")
+        - const arrow = "=>"
+
+        span #{arrow}
+        | Olá, meu nome é Lais, sou formada em Análise e Desenvolvimento de Sistemas e pós-graduada em Engenharia de Software pela <b>UFPR</b>. Sou apaixonado por futebol, tendo o <b class="team-name">CORITIBA</b> como o time do 
+        span(class="team-heart") ♥
+    include ./icons/hero-illustration.svg
