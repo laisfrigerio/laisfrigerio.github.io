@@ -28,3 +28,13 @@
 .title-04 {
   color: $secondary;
 }
+
+.title-as-icon {
+  @extend %flex;
+  @extend %justify-content-center;
+  margin-bottom: 5rem;
+
+  @media #{$media-max992} {
+    margin-bottom: 3rem;
+  }
+}

@@ -16,18 +16,45 @@
     top: 0;
   }
 
-  .container {
+  .timeline-item {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
 
-    h2 {
-      color: $green-500;
+    ul {
+      list-style: none;
     }
 
+    .timeline-subtitle {
+      color: $gray-100;
+      font-family: $font-montserrat;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .timeline-title {
+      color: $green-500;
+      margin-bottom: 1rem;
+    }
+
+    ul li,
     p {
       color: $gray-350;
+    }
+
+    ul li {
+      line-height: 150%;
+      margin-bottom: 1rem;
+
+      &::before {
+        color: $green-500;
+        content: '::';
+        font-family: $font-fira-code;
+        margin-right: 5px;
+      }
     }
 
     &::after {
@@ -94,13 +121,18 @@
       left: 31px;
     }
 
-    .container {
+    .timeline-item {
       width: 100%;
-      padding-left: 70px;
+      padding-left: 60px;
       padding-right: 25px;
 
+      &::after {
+        height: 20px;
+        width: 20px;
+      }
+
       &::before {
-        left: 60px;
+        left: 50px;
         border: medium solid $bg;
         border-width: 10px 10px 10px 0;
         border-color: transparent $bg transparent transparent;

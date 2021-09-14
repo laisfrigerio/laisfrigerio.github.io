@@ -14,6 +14,14 @@
   display: flex;
 }
 
+%justify-content-center {
+  -webkit-justify-content: center;
+         -webkit-box-pack: center;
+          justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+}
+
 %justify-content-space-between {
   -webkit-justify-content: space-between;
          -webkit-box-pack: justify;
