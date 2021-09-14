@@ -14,6 +14,22 @@
   display: flex;
 }
 
+%flex-direction-column {
+  -webkit-flex-direction: column;
+   -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -moz-box-direction: normal;
+         -moz-box-orient: vertical;
+          flex-direction: column;
+}
+
+%flex-wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
 %justify-content-center {
   -webkit-justify-content: center;
          -webkit-box-pack: center;

@@ -32,7 +32,15 @@
 .title-as-icon {
   @extend %flex;
   @extend %justify-content-center;
-  margin-bottom: 5rem;
+
+  svg {
+    height: 50px;
+    width: 50px;
+
+    path {
+      stroke: $green-500;
+    }
+  }
 
   @media #{$media-max992} {
     margin-bottom: 3rem;

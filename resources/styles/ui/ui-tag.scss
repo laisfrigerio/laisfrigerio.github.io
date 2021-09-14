@@ -3,4 +3,9 @@
   background: $gray-950;
   color: $gray-375;
   padding: 0.2rem 0.5rem;
+
+  &.green {
+    background-color: $green-500;
+    color: $white;
+  }
 }

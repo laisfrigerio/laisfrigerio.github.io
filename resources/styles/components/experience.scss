@@ -1,17 +1,6 @@
 .experience {
   padding: 0 0 4rem;
 
-  .title-as-icon {
-    svg {
-      height: 50px;
-      width: 50px;
-
-      path {
-        stroke: $green-500;
-      }
-    }
-  }
-
   @media #{$media-max992} {
     max-width: 620px;
     padding: 4rem 0;

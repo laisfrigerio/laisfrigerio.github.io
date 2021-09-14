@@ -1,0 +1,40 @@
+.last-articles {
+  h3 {
+    color: $green-500;
+    font-family: $font-fira-code;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  ul {
+    @extend %flex;
+    @extend %justify-content-center;
+    gap: 1rem;
+    padding-bottom: 4rem;
+
+    .item {
+      @extend %flex;
+      @extend %flex-direction-column;
+      background: $gray-500;
+      border: 1px solid $green-500;
+      height: auto;
+      max-height: 450px;
+      max-width: 300px;
+      padding: 1.5rem;
+      box-shadow: 1px 1px 10px 5px #292929;
+
+      h4 {
+        color: $white;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      time {
+        color: $gray-350;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

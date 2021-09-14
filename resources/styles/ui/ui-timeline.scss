@@ -22,10 +22,6 @@
     background-color: inherit;
     width: 50%;
 
-    ul {
-      list-style: none;
-    }
-
     .timeline-subtitle {
       color: $gray-100;
       font-family: $font-montserrat;
@@ -43,10 +39,10 @@
     ul li,
     p {
       color: $gray-350;
+      line-height: 150%;
     }
 
     ul li {
-      line-height: 150%;
       margin-bottom: 1rem;
 
       &::before {
