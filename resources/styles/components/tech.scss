@@ -15,4 +15,8 @@
       margin-right: 5px;
     }
   }
+
+  @media #{$media-max992} {
+    padding: 0 3rem 3rem;
+  }
 }

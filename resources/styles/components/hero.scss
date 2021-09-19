@@ -2,7 +2,7 @@
   @extend %align-items-center;
   @extend %flex;
   @extend %justify-content-space-between;
-  padding: 4rem 0;
+  padding: 4rem 0 2rem;
   margin-top: 80px;
 
   .profile-data {
@@ -60,12 +60,13 @@
 
   @media #{$media-max992} {
     @include flex-direction-column;
-    padding: 1rem;
+    padding: 1rem 1rem 4rem;
 
     .profile-data {
       @include flex-order(2);
       max-width: 620px;
       min-width: auto;
+      padding: 0 1rem;
 
       .profile-about {
         @include flex-wrap;
