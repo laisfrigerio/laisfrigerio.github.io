@@ -37,9 +37,21 @@
           svg {
             height: 50px;
             width: 50px;
+          }
 
-            * {
-              fill: $gray-375 !important;
+          &.glasses {
+            svg {
+              * {
+                fill: $gray-375 !important;
+              }
+            }
+          }
+
+          &.image {
+            svg {
+              * {
+                stroke: $gray-375;
+              }
             }
           }
         }

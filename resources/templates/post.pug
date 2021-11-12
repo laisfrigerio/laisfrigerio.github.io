@@ -1,0 +1,18 @@
+extends ./frameset.pug
+
+block pageTitle
+  title #{post.metadata.title} | Lais Frigério
+
+block content
+  - var active = 'blog';
+  include ./components/header.pug
+
+  section(class="post wrapper")
+    time #{post.metadata.date}
+    strong #{post.metadata.title}
+    p #{post.metadata.excerpt}
+
+    .content
+      #{post.content}
+
+  include ./components/footer.pug

@@ -2,7 +2,9 @@ header(class="ui-header")
   div(class="wrapper") 
     img(alt="Óculos" src="/images/svg/glasses.svg")
     nav
-      - var blogUrl = stage !== 'prd' ? 'blog.html' : 'blog'
+      - const blogUrl = stage !== 'prd' ? '/blog.html' : '/blog'
+      - const aboutUrl = stage !== 'prd' ? '/about.html' : '/about'
 
       a(href='/' class="" + (active === 'home' ? "active" : "")) Início
       a(href=blogUrl class="" + (active === 'blog' ? "active" : "")) Blog
+      a(href=aboutUrl class="" + (active === 'about' ? "active" : "")) Sobre

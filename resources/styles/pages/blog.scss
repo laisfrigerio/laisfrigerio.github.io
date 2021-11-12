@@ -1,0 +1,44 @@
+.blog {
+  margin-top: 100px;
+  .list-articles {
+    padding: 0 2rem 2rem;
+
+    .item {
+      a {
+        color: $gray-350;
+        display: block;
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover strong {
+          color: $green-500;
+        }
+
+        time {
+          align-items: center;
+          color: $gray-350;
+          display: flex;
+          font-size: 0.8rem;
+        }
+    
+        strong {
+          display: block;
+          font-size: 1.5rem;
+          margin-top: 0.5rem;
+        }
+    
+        p {
+          color: $gray-350;
+          line-height: 1.625rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      & + .item {
+        border-top: 1px solid $gray-400;
+        margin-top: 2rem;
+        padding-top: 2rem;
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
 doctype html
 html(lang="pt-BR")
   head
-    title Lais Frigério
+    block pageTitle
+      title Lais Frigério
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name="author" content="Lais Frigério")
@@ -19,10 +20,10 @@ html(lang="pt-BR")
     link(href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet")
-    link(type="text/css" rel="stylesheet" href="css/app.css?v=002")
     link(rel="shortcut icon" href="images/favicon-green.ico")
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(type="text/css" rel="stylesheet" href="/css/app.css")
   body
     main
       block content
-      script(src="js/app.js") 
+      script(src="/js/app.js") 

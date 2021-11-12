@@ -59,13 +59,21 @@
       }
     }
 
-@media (max-width: 487px) {
+    @media #{$media-max487} {
+      padding: 0 1rem;
+
       > img {
         width: 50px;
       }
   
       nav {
         margin-left: 2.5rem;
+
+        a {
+          & + a {
+            margin-left: 1rem;
+          }
+        }
       }
   
       button {

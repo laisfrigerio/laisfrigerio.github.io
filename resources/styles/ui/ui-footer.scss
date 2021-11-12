@@ -28,6 +28,12 @@
     font-family: $font-fira-code;
   }
 
+  .avatar {
+    height: auto;
+    margin-top: 20px;
+    width: 60px;
+  }
+
   @media #{$media-max992} {
     margin-top: 0;
   }
