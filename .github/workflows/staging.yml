@@ -4,7 +4,7 @@ name: Deploy to prod
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches: ["staging/*"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -66,6 +66,6 @@ jobs:
         uses: actions/deploy-pages@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          cname: laisfrigerio.com.br
+          publish_branch: staging
+          cname: staging.laisfrigerio.com.br
         
