@@ -62,7 +62,7 @@ jobs:
       - name: Deploy to GitHub Pages Production environment
         uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: staging
           cname: staging.laisfrigerio.com.br
         
