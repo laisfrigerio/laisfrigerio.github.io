@@ -4,7 +4,7 @@ description: A GitHub Action to deploy an site in preview mode in an test enviro
 
 on:
   pull_request:                                     
-    actions:
+    types:
       - opened
       - edited
       - reopened
