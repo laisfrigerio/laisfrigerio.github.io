@@ -1,15 +1,10 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Preview
-description: A GitHub Action to deploy an site in preview mode in an test environment
+name: Deploy to prod
 
 on:
-  issue_comment:                                     
-    actions:
-      - created
-      - edited
-      - deleted
-    if: 
-      - ${{ github.event.issue.pull_request }}
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -47,10 +42,10 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://staging.laisfrigerio.com.br
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages Test environment
+      - name: Deploy to GitHub Pages Production environment
         id: deployment
         uses: actions/deploy-pages@v2
