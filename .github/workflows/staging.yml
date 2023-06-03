@@ -20,7 +20,8 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-    
+
+jobs:
   # Deployment job
   deploy:
     runs-on: ubuntu-latest
