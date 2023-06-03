@@ -45,7 +45,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://staging.laisfrigerio.com.br
+      url: staging.laisfrigerio.com.br
     runs-on: ubuntu-latest
     needs: build
     steps:
