@@ -3,13 +3,11 @@ name: Preview
 description: A GitHub Action to deploy an site in preview mode in an test environment
 
 on:
-  issue_comment:                                     
+  pull_request:                                     
     actions:
-      - created
+      - opened
       - edited
-      - deleted
-    if: 
-      - ${{ github.event.issue.pull_request }}
+      - reopened
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
