@@ -49,3 +49,4 @@ jobs:
       - name: Deploy to GitHub Pages Production environment
         id: deployment
         uses: actions/deploy-pages@v2
+        cname: laisfrigerio.com.br
