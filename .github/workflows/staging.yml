@@ -23,9 +23,8 @@ jobs:
           PR_NO: ${{ github.event.issue.number }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/checkout@v3
-        with:
-          ref: ${{ steps.get-branch.outputs.branch }}
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
         with:
