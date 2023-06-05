@@ -14,10 +14,9 @@ on:
 
 jobs:
   deploy:
-    if: ${{ github.event.issue.pull_request }}
+    if: '${{ github.event.issue.pull_request }} && contains(github.event.comment.body, 'cicd/staging')'
     runs-on: ubuntu-latest
     steps:
-      - if: contains(github.event.comment.body, 'cicd/staging')
       - uses: actions/checkout@v2
 
       - uses: actions/setup-node@v3
