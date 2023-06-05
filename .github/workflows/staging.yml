@@ -13,7 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        ref: ${{ github.ref_name }}
+        with:
+          ref: refs/pull/${{ github.event.issue.number }}/head
 
       - uses: actions/setup-node@v3
         with:
