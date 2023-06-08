@@ -15,8 +15,9 @@ jobs:
       - name: Set current branch name
         id: 'get-branch'
         run: | 
-          echo "Current branch name.... ${GITHUB_HEAD_REF}"
-          echo "{branch}=${GITHUB_HEAD_REF}" >> $GITHUB_OUTPUT
+          echo "Current branch name.... ${GITHUB_BASE_REF}"
+          echo ${GITHUB_BASE_REF}
+          echo "branch=${GITHUB_BASE_REF}" >> $GITHUB_OUTPUT
 
       - name: Checkout
         uses: actions/checkout@v3
