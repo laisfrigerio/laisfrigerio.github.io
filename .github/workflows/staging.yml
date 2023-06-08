@@ -12,8 +12,11 @@ jobs:
     if: github.event.issue.pull_request && contains(github.event.comment.body, 'cicd/staging')
     runs-on: ubuntu-latest
     steps:
-      - id: 'get-branch'
-        run: echo "{branch}=${GITHUB_HEAD_REF}" >> $GITHUB_OUTPUT
+      - name: Set current branch name
+        id: 'get-branch'
+        run: | 
+          echo "Current branch name.... ${GITHUB_HEAD_REF}"
+          echo "{branch}=${GITHUB_HEAD_REF}" >> $GITHUB_OUTPUT
 
       - name: Checkout
         uses: actions/checkout@v3
