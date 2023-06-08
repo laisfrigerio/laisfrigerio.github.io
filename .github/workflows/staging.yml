@@ -6,10 +6,10 @@ env:
 on:
   issue_comment:
     types: [created, edited]
-    if: '${github.event.comment.body} == "cicd/staging"'
 
 jobs:
   deploy:
+    if: github.event.issue.pull_request && contains(github.event.comment.body, 'cicd/staging')
     runs-on: ubuntu-latest
     steps:
       - id: 'get-branch'
